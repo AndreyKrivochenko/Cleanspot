@@ -1,0 +1,24 @@
+{% extends 'profileapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="cabinet-main">
+    <h2>Личный кабинет администратора</h2>
+
+    {% include 'profileapp/include/inc_lk_admin_menu.html' %}
+
+    <form class="cabinet-form" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="cabinet-form__inputs">
+            {% for field in form %}
+                <div>
+                    {{ field.errors }}
+                    {{ field }}
+                </div>
+            {% endfor %}
+        </div>
+        <button type="submit" class="button button_blue__filled">Подтвердить</button>
+    </form>
+</section>
+{% endblock content %}

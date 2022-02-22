@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b05dc3d8e.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="nav">
+            <a href="#"><img src="img/logo.png" alt="logo" title="Домой"></a>
+            <ul class="nav__ul">
+                <li class="nav__ul__item f-16">
+                    <a href="#">Как это работает</a>
+                </li>
+                <li class="nav__ul__item f-16">
+                    <a href="#">О сервисе</a>
+                </li>
+                <li class="nav__ul__item f-16">
+                    <a href="#">FAQ</a>
+                </li>
+                <li class="nav__ul__item f-16">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="nav__ul__item f-16">
+                    <a href="#">Поддержка</a>
+                </li>
+                <li class="nav__ul__item f-16">
+                    <a href="#">Для Партнеров</a>
+                </li>
+            </ul>
+            <button class="button button_darkgreen__filled" title="Профиль">
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </button>
+        </section>
+        <section class="cabinet-main">
+            <h2>Личный кабинет администратора</h2>
+            <ul class="cabinet__options">
+                <li class="cabinet__options__item active"><p>Добавление
+                    партнера</p></li>
+                <li class="cabinet__options__item">Редактировать
+                    партнера</li>
+                <li class="cabinet__options__item">История всех
+                    заказов</li>
+                <li class="cabinet__options__item">Пользователи</li>
+                <li class="cabinet__options__item">Прайс -лист</li>
+            </ul>
+            <form class="cabinet-form">
+                <div class="cabinet-form__inputs">
+                    <div><input type="text" class="cabinet-form__input" placeholder="Наименование"></div>
+                    <div><input type="text" class="cabinet-form__input" placeholder="Телефон"></div>
+                    <div><input type="text" class="cabinet-form__input" placeholder="E-mail"></div>
+                    <div><input type="text" class="cabinet-form__input" placeholder="ИНН/КПП"></div>
+                    <div><input type="text" class="cabinet-form__input" placeholder="Город"></div>
+                    <div><input type="password" class="cabinet-form__input" placeholder="Пароль"></div>
+                    <div><input type="text" class="cabinet-form__input" placeholder="Имя отображения на сайте"></div>
+                </div>
+                <button type="submit" class="button button_blue__filled">Подтвердить</button>
+            </div>
+        </section>
+        
+    </div>
+</body>
+
+</html>
